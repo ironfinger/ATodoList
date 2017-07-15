@@ -1,0 +1,6 @@
+framework module Pods_ATodoList {
+  umbrella header "Pods-ATodoList-umbrella.h"
+
+  export *
+  module * { export * }
+}

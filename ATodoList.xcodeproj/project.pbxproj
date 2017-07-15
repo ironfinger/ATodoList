@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CD3F7C3B83C6DE7CD1286AA /* Pods_ATodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB7FD56ACF08A335A96FF80 /* Pods_ATodoList.framework */; };
+		E3186B8E1F1AD738009728A2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3186B8D1F1AD738009728A2 /* TasksViewController.swift */; };
 		E35CBA1C1F1ACD6B00C5A699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CBA1B1F1ACD6B00C5A699 /* AppDelegate.swift */; };
 		E35CBA1E1F1ACD6B00C5A699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */; };
 		E35CBA211F1ACD6B00C5A699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA1F1F1ACD6B00C5A699 /* Main.storyboard */; };
 		E35CBA241F1ACD6B00C5A699 /* ATodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E35CBA221F1ACD6B00C5A699 /* ATodoList.xcdatamodeld */; };
 		E35CBA261F1ACD6B00C5A699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA251F1ACD6B00C5A699 /* Assets.xcassets */; };
 		E35CBA291F1ACD6B00C5A699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA271F1ACD6B00C5A699 /* LaunchScreen.storyboard */; };
+		E35CBA311F1ACE8900C5A699 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FB7FD56ACF08A335A96FF80 /* Pods_ATodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62349599B573924C1AE0855E /* Pods-ATodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATodoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATodoList/Pods-ATodoList.debug.xcconfig"; sourceTree = "<group>"; };
+		88777620D68B0F8CE586DAB6 /* Pods-ATodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATodoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATodoList/Pods-ATodoList.release.xcconfig"; sourceTree = "<group>"; };
+		E3186B8D1F1AD738009728A2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		E35CBA181F1ACD6B00C5A699 /* ATodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35CBA1B1F1ACD6B00C5A699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		E35CBA251F1ACD6B00C5A699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35CBA281F1ACD6B00C5A699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35CBA2A1F1ACD6B00C5A699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD3F7C3B83C6DE7CD1286AA /* Pods_ATodoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FBD1F29D6B9F0BC3D16ED95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62349599B573924C1AE0855E /* Pods-ATodoList.debug.xcconfig */,
+				88777620D68B0F8CE586DAB6 /* Pods-ATodoList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D3055A981ABC0C283151118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB7FD56ACF08A335A96FF80 /* Pods_ATodoList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3186B8C1F1AD717009728A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */,
+				E3186B8D1F1AD738009728A2 /* TasksViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		E35CBA0F1F1ACD6A00C5A699 = {
 			isa = PBXGroup;
 			children = (
 				E35CBA1A1F1ACD6B00C5A699 /* ATodoList */,
 				E35CBA191F1ACD6B00C5A699 /* Products */,
+				6FBD1F29D6B9F0BC3D16ED95 /* Pods */,
+				7D3055A981ABC0C283151118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +93,14 @@
 		E35CBA1A1F1ACD6B00C5A699 /* ATodoList */ = {
 			isa = PBXGroup;
 			children = (
+				E3186B8C1F1AD717009728A2 /* ViewControllers */,
 				E35CBA1B1F1ACD6B00C5A699 /* AppDelegate.swift */,
-				E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */,
 				E35CBA1F1F1ACD6B00C5A699 /* Main.storyboard */,
 				E35CBA251F1ACD6B00C5A699 /* Assets.xcassets */,
 				E35CBA271F1ACD6B00C5A699 /* LaunchScreen.storyboard */,
 				E35CBA2A1F1ACD6B00C5A699 /* Info.plist */,
 				E35CBA221F1ACD6B00C5A699 /* ATodoList.xcdatamodeld */,
+				E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */,
 			);
 			path = ATodoList;
 			sourceTree = "<group>";
@@ -74,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E35CBA2D1F1ACD6B00C5A699 /* Build configuration list for PBXNativeTarget "ATodoList" */;
 			buildPhases = (
+				A4511E4BA5C530688EE1D4FD /* [CP] Check Pods Manifest.lock */,
 				E35CBA141F1ACD6B00C5A699 /* Sources */,
 				E35CBA151F1ACD6B00C5A699 /* Frameworks */,
 				E35CBA161F1ACD6B00C5A699 /* Resources */,
+				DA7D31E75B70C7D89EB843F1 /* [CP] Embed Pods Frameworks */,
+				7AF8F679C3F6F46DFE70BC40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35CBA291F1ACD6B00C5A699 /* LaunchScreen.storyboard in Resources */,
+				E35CBA311F1ACE8900C5A699 /* GoogleService-Info.plist in Resources */,
 				E35CBA261F1ACD6B00C5A699 /* Assets.xcassets in Resources */,
 				E35CBA211F1ACD6B00C5A699 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +175,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AF8F679C3F6F46DFE70BC40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATodoList/Pods-ATodoList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4511E4BA5C530688EE1D4FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7D31E75B70C7D89EB843F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATodoList/Pods-ATodoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E35CBA141F1ACD6B00C5A699 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E35CBA1E1F1ACD6B00C5A699 /* ViewController.swift in Sources */,
+				E3186B8E1F1AD738009728A2 /* TasksViewController.swift in Sources */,
 				E35CBA1C1F1ACD6B00C5A699 /* AppDelegate.swift in Sources */,
 				E35CBA241F1ACD6B00C5A699 /* ATodoList.xcdatamodeld in Sources */,
 			);
@@ -271,29 +362,31 @@
 		};
 		E35CBA2E1F1ACD6B00C5A699 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62349599B573924C1AE0855E /* Pods-ATodoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V93YKG2RBT;
 				INFOPLIST_FILE = ATodoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tom.ATodoList;
+				PRODUCT_BUNDLE_IDENTIFIER = tom.Organize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		E35CBA2F1F1ACD6B00C5A699 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88777620D68B0F8CE586DAB6 /* Pods-ATodoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V93YKG2RBT;
 				INFOPLIST_FILE = ATodoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tom.ATodoList;
+				PRODUCT_BUNDLE_IDENTIFIER = tom.Organize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -316,6 +409,7 @@
 				E35CBA2F1F1ACD6B00C5A699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
