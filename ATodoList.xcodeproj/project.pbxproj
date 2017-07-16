@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9CD3F7C3B83C6DE7CD1286AA /* Pods_ATodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB7FD56ACF08A335A96FF80 /* Pods_ATodoList.framework */; };
 		E3186B8E1F1AD738009728A2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3186B8D1F1AD738009728A2 /* TasksViewController.swift */; };
+		E3186B901F1ADE88009728A2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3186B8F1F1ADE88009728A2 /* SettingsViewController.swift */; };
 		E35CBA1C1F1ACD6B00C5A699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CBA1B1F1ACD6B00C5A699 /* AppDelegate.swift */; };
 		E35CBA1E1F1ACD6B00C5A699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */; };
 		E35CBA211F1ACD6B00C5A699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA1F1F1ACD6B00C5A699 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		62349599B573924C1AE0855E /* Pods-ATodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATodoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATodoList/Pods-ATodoList.debug.xcconfig"; sourceTree = "<group>"; };
 		88777620D68B0F8CE586DAB6 /* Pods-ATodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATodoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATodoList/Pods-ATodoList.release.xcconfig"; sourceTree = "<group>"; };
 		E3186B8D1F1AD738009728A2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		E3186B8F1F1ADE88009728A2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E35CBA181F1ACD6B00C5A699 /* ATodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35CBA1B1F1ACD6B00C5A699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */,
 				E3186B8D1F1AD738009728A2 /* TasksViewController.swift */,
+				E3186B8F1F1ADE88009728A2 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				E35CBA1E1F1ACD6B00C5A699 /* ViewController.swift in Sources */,
 				E3186B8E1F1AD738009728A2 /* TasksViewController.swift in Sources */,
 				E35CBA1C1F1ACD6B00C5A699 /* AppDelegate.swift in Sources */,
+				E3186B901F1ADE88009728A2 /* SettingsViewController.swift in Sources */,
 				E35CBA241F1ACD6B00C5A699 /* ATodoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

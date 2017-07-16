@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class TasksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     let tasks = ["Task01", "Tasks02"]
     
@@ -19,6 +23,19 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.delegate = self
+        
+        nameLabel.text = "Complete setup in settings!"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let currentUser = Auth.auth().currentUser?.uid
+        
+        Database.database().reference().child("Users").child(currentUser!).observeSingleEvent(of: DataEventType.value) { (snapshot) in
+            // Get user name
+            let value = snapshot.value as? NSDictionary
+            let name = value?["name"] as? String ?? ""
+            self.nameLabel.text = name
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
