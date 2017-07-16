@@ -18,6 +18,7 @@
 		E35CBA291F1ACD6B00C5A699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA271F1ACD6B00C5A699 /* LaunchScreen.storyboard */; };
 		E35CBA311F1ACE8900C5A699 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */; };
 		E3B1A7841F1B9C580068FB94 /* SetTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B1A7831F1B9C580068FB94 /* SetTaskViewController.swift */; };
+		E3B1A7861F1BA34D0068FB94 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B1A7851F1BA34D0068FB94 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E35CBA2A1F1ACD6B00C5A699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3B1A7831F1B9C580068FB94 /* SetTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTaskViewController.swift; sourceTree = "<group>"; };
+		E3B1A7851F1BA34D0068FB94 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				E3186B8C1F1AD717009728A2 /* ViewControllers */,
+				E3B1A7871F1BA3530068FB94 /* Models */,
 				E35CBA1B1F1ACD6B00C5A699 /* AppDelegate.swift */,
 				E35CBA1F1F1ACD6B00C5A699 /* Main.storyboard */,
 				E35CBA251F1ACD6B00C5A699 /* Assets.xcassets */,
@@ -109,6 +112,14 @@
 				E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */,
 			);
 			path = ATodoList;
+			sourceTree = "<group>";
+		};
+		E3B1A7871F1BA3530068FB94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3B1A7851F1BA34D0068FB94 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 				E3B1A7841F1B9C580068FB94 /* SetTaskViewController.swift in Sources */,
 				E35CBA1C1F1ACD6B00C5A699 /* AppDelegate.swift in Sources */,
 				E3186B901F1ADE88009728A2 /* SettingsViewController.swift in Sources */,
+				E3B1A7861F1BA34D0068FB94 /* Task.swift in Sources */,
 				E35CBA241F1ACD6B00C5A699 /* ATodoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
