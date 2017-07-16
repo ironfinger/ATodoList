@@ -25,20 +25,8 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.dataSource = self
         tableView.delegate = self
         nameLabel.text = "Complete setup in settings!"
-        let currentUser = Auth.auth().currentUser!.uid
         
-        Database.database().reference().child("Users").child(currentUser).child("Tasks").observe(DataEventType.childAdded) { (snapshot) in
-            print(snapshot)
-            let myTask = Task()
-            let value = snapshot.value as? NSDictionary
-            let name = value?["TaskName"] as? String ?? ""
-            let desc = value?["TaskDescription"] as? String ?? ""
-            
-            myTask.taskName = name
-            myTask.taskDescription = desc
-            self.userTasks.append(myTask)
-            self.tableView.reloadData()
-        }
+        pullTasks() // Fetch the tasks.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,6 +36,25 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
             let value = snapshot.value as? NSDictionary
             let name = value?["name"] as? String ?? ""
             self.nameLabel.text = name
+        }
+    }
+    
+    func pullTasks() { // Pulls tasks from the database.
+        let currentUser = Auth.auth().currentUser!.uid // Fetches the current userUUID from the firebase server.
+        Database.database().reference().child("Users").child(currentUser).child("Tasks").observe(DataEventType.childAdded) { (snapshot) in // Gets the tasks stored in the database.
+            print(snapshot)
+            let myTask = Task()
+            let value = snapshot.value as? NSDictionary
+            // Fetch the necessary information about the tasks.
+            let name = value?["TaskName"] as? String ?? ""
+            let desc = value?["TaskDescription"] as? String ?? ""
+            // You may need to get the UUID of the tasks for viewing the task.
+            
+            myTask.taskName = name
+            myTask.taskDescription = desc
+            
+            self.userTasks.append(myTask)
+            self.tableView.reloadData()
         }
     }
     
