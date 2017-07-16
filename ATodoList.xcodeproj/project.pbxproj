@@ -17,6 +17,7 @@
 		E35CBA261F1ACD6B00C5A699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA251F1ACD6B00C5A699 /* Assets.xcassets */; };
 		E35CBA291F1ACD6B00C5A699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA271F1ACD6B00C5A699 /* LaunchScreen.storyboard */; };
 		E35CBA311F1ACE8900C5A699 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */; };
+		E3B1A7841F1B9C580068FB94 /* SetTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B1A7831F1B9C580068FB94 /* SetTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E35CBA281F1ACD6B00C5A699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35CBA2A1F1ACD6B00C5A699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35CBA301F1ACE8900C5A699 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3B1A7831F1B9C580068FB94 /* SetTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				E35CBA1D1F1ACD6B00C5A699 /* ViewController.swift */,
 				E3186B8D1F1AD738009728A2 /* TasksViewController.swift */,
 				E3186B8F1F1ADE88009728A2 /* SettingsViewController.swift */,
+				E3B1A7831F1B9C580068FB94 /* SetTaskViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				E35CBA1E1F1ACD6B00C5A699 /* ViewController.swift in Sources */,
 				E3186B8E1F1AD738009728A2 /* TasksViewController.swift in Sources */,
+				E3B1A7841F1B9C580068FB94 /* SetTaskViewController.swift in Sources */,
 				E35CBA1C1F1ACD6B00C5A699 /* AppDelegate.swift in Sources */,
 				E3186B901F1ADE88009728A2 /* SettingsViewController.swift in Sources */,
 				E35CBA241F1ACD6B00C5A699 /* ATodoList.xcdatamodeld in Sources */,

@@ -47,4 +47,8 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.textLabel?.text = tasks[indexPath.row]
         return cell
     }
+    
+    @IBAction func addTaskTapped(_ sender: Any) {
+        performSegue(withIdentifier: "taskSegue", sender: nil)
+    }
 }
