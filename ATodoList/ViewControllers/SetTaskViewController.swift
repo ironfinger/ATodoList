@@ -26,11 +26,19 @@ class SetTaskViewController: UIViewController {
         taskDescriptionTextField.text! = text
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     @IBAction func setTaskBtnTapped(_ sender: Any) {
         let currentUser = Auth.auth().currentUser?.uid
         let newTask = ["TaskName":taskNameTextField.text!, "TaskDescription":taskDescriptionTextField.text!]
         _ = Database.database().reference().child("Users").child(currentUser!).child("Tasks").childByAutoId().setValue(newTask)
         print("New task added. Name: \(taskNameTextField.text!). Description: \(taskDescriptionTextField.text!).")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func tapGestureTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 }

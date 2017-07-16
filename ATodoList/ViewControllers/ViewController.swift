@@ -24,6 +24,10 @@ class ViewController: UIViewController {
         
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     @IBAction func indexChangedSegmentController(_ sender: Any) {
         switch segementController.selectedSegmentIndex
         {

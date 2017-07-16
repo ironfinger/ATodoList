@@ -5,6 +5,10 @@
 //  Created by Thomas Houghton on 16/07/2017.
 //  Copyright © 2017 Thomas Houghton. All rights reserved.
 //
+//
+// Things to do: - Look at JTAppleCalender: https://cocoapods.org/pods/JTAppleCalendar
+//
+
 
 import UIKit
 import Firebase
@@ -16,8 +20,12 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var viewTaskSubView: UIView! // This sub view is is used to display the task that the user selected.
+    @IBOutlet weak var taskTitleLabel: UILabel! // This is in the view task sub view.
+    
     
     var userTasks : [Task] = []
+    var taskSubVCVisible = false // This is used to track the viewTaskSubView to see if it is in view.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +33,14 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.dataSource = self
         tableView.delegate = self
         nameLabel.text = "Complete setup in settings!"
+        self.viewTaskSubView.alpha = 0
+        viewTaskSubView.layer.cornerRadius = 10
         
         pullTasks() // Fetch the tasks.
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -67,6 +81,30 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         let taskName = userTasks[indexPath.row]
         cell.textLabel?.text = taskName.taskName
         return cell 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // performSegue(withIdentifier: "viewTaskSegue", sender: nil)
+        taskTitleLabel.text = userTasks[indexPath.row].taskName
+        if taskSubVCVisible == false {
+            UIView.animate(withDuration: 0.25, animations: {
+                self.viewTaskSubView.alpha = 1
+                // target location: X = 566 Y = 489.
+                // current location: X = 573  Y = 873
+                self.viewTaskSubView.frame.origin.y -= 384
+            }, completion: nil)
+        }
+        taskSubVCVisible = true
+    }
+    
+    @IBAction func taskViewDismissBtnTapped(_ sender: Any) {
+        if taskSubVCVisible == true {
+            UIView.animate(withDuration: 0.25, animations: {
+                self.viewTaskSubView.alpha = 0
+                self.viewTaskSubView.frame.origin.y += 384
+            }, completion: nil)
+            taskSubVCVisible = false
+        }
     }
     
     @IBAction func addTaskTapped(_ sender: Any) {
