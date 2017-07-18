@@ -35,6 +35,7 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         nameLabel.text = "Complete setup in settings!"
         self.viewTaskSubView.alpha = 0
         viewTaskSubView.layer.cornerRadius = 10
+        tableView.layer.cornerRadius = 10
         
         pullTasks() // Fetch the tasks.
     }
@@ -78,6 +79,7 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        cell.backgroundColor = UIColor.clear
         let taskName = userTasks[indexPath.row]
         cell.textLabel?.text = taskName.taskName
         return cell 
