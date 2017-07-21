@@ -93,7 +93,7 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
                 self.viewTaskSubView.alpha = 1
                 // target location: X = 566 Y = 489.
                 // current location: X = 573  Y = 873
-                self.viewTaskSubView.frame.origin.y -= 384
+                // self.viewTaskSubView.frame.origin.y -= 384
             }, completion: nil)
         }
         taskSubVCVisible = true
@@ -103,7 +103,7 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         if taskSubVCVisible == true {
             UIView.animate(withDuration: 0.25, animations: {
                 self.viewTaskSubView.alpha = 0
-                self.viewTaskSubView.frame.origin.y += 384
+                // self.viewTaskSubView.frame.origin.y += 384
             }, completion: nil)
             taskSubVCVisible = false
         }
