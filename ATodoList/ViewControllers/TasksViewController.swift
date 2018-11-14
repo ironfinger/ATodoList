@@ -73,7 +73,8 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func
+        tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return userTasks.count
     }
     
